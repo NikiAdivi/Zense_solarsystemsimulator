@@ -103,7 +103,7 @@ def orbit(m0, e, a, inclination, ascension):
     while 1.e-2 < abs(ecc_anom - ecc_anom_old).max():  # Newton-Raphson solver for eccentric anomaly (E)
         ecc_anom_old = ecc_anom  # assigning previous value for accuracy comparison
         ecc_anom -= (ecc_anom - m - e * sin(ecc_anom)) / (1. - e * cos(ecc_anom))
-        # function for E divided by its derivative w.r.t E
+        
 
     theta = 2. * arctan2(sqrt(1. + e) * sin(ecc_anom / 2.),
                          sqrt(1. - e) * cos(ecc_anom / 2.))  # true anomaly
@@ -144,7 +144,7 @@ dt=1
 def update(simulation_oneplanet,t,dt):
     simulation_oneplanet[0].pos= simulation_oneplanet[1][:,(int(-t / simulation_oneplanet[2])) % 10000]
     print simulation_oneplanet[0].pos
-    simulation_oneplanet[0].trail.append(simulation_oneplanet[0].pos)#,retain=int(1.5e-9*simulation_oneplanet[3]**1.55/dt))
+    simulation_oneplanet[0].trail.append(simulation_oneplanet[0].pos)
     simulation_oneplanet[0].rotate(angle=simulation_oneplanet[5]*dt,axis=(-sin(simulation_oneplanet[4]),cos(simulation_oneplanet[4]),0))
     return 0
    
