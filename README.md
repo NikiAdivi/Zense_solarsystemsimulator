@@ -5,8 +5,11 @@ The solar system has the sun and the 8 major planets which include mercury,venus
 The keplerian elements are used for an accurate representation of the path,positionand time period of the planet.
 
 INSTRUCTIONS:
-
-Install the Vpython module before running the program using python2.7
+Make sure VPython is installed.
+To install Vpython, run the following commands on the terminal.
+    sudo apt-get install python-visual
+    sudo apt-get install libgtkglextmm-x11-1.2-dev.
+Once VPython is available,run solar2.py using python2.7 .
 Universe in the form of a sphere will appear.
 Zoom in to find the solar system.
 To zoom in and out,mouse right_click+left_click+scroll
