@@ -22,10 +22,17 @@ python2.7 solar2.py
 - To rotate the view, i.e. view it at different angles: ``` right_click on mouse+movement of cursor in the direction desired.```
 
 ### Screenshots of the simulation
+
+The universe
 ![image](https://user-images.githubusercontent.com/43961340/122564250-be1ee400-d062-11eb-8949-0f0e987f1a4f.png)
 
+After xooming enough
+![image](https://user-images.githubusercontent.com/43961340/122564444-f9b9ae00-d062-11eb-9fe9-c663d81d531a.png)
 
+At otheer angles
+![image](https://user-images.githubusercontent.com/43961340/122564459-fd4d3500-d062-11eb-9939-9c3d3ce3d231.png)
 
+![image](https://user-images.githubusercontent.com/43961340/122564472-01795280-d063-11eb-8a91-293174c80925.png)
 
 
 
